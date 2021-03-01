@@ -13,9 +13,9 @@
         <label for="date">data</label>
         <input type="date" name="date" id="" />
         <label for="expense">Nazwa Wydatku</label>
-        <input type="text" name="expense" />
+        <input type="text" name="expense" required />
         <label for="value">Koszt w PLN</label>
-        <input type="number" name="value" />
+        <input type="number" name="value" required step="0.01" id="value" />
         <label for="comments">Uwagi</label>
         <input type="text" name="comments" />
         <button type="submit">Dodaj</button>
@@ -23,7 +23,7 @@
         <button type="reset" data-label="clear-form">Wyczyść formularz</button>
     </form>
     <div class="output" data-label="output">
-        <div class="cell">pdfl</div>
+        <!-- <div class="cell">pdfl</div> -->
     </div>
     <script src="index.js"></script>
 </body>
