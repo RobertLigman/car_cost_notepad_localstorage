@@ -28,6 +28,7 @@ expensesForm.addEventListener("submit", (e) => {
     if (Element.nodeName === "INPUT".toUpperCase()) {
       // console.log(Element.nodeName, true);
       const item = document.createElement("p");
+
       item.innerHTML = Element.value;
       if (Element.id === "value") {
         item.classList.add("value");
@@ -49,5 +50,5 @@ expensesForm.addEventListener("submit", (e) => {
     .reduce((acc, currentValue) => {
       return (acc += currentValue);
     });
-  costHeader.textContent = "Suma Wydatków: " + overAllCost;
+  costHeader.textContent = "Suma Wydatków: " + overAllCost + "PLN";
 });

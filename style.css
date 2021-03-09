@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    background-color: lightblue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    border: 1px solid lightblue;
+}
+
+button:hover {
+    background-color: #fff;
+    color: lightblue;
+}
+
+#expenses-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cell {
+    border: 1px solid #444;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
